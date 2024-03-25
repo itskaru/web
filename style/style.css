@@ -1,0 +1,144 @@
+*{
+    font-family: "PT Sans", sans-serif;
+}
+
+html { 
+    scroll-behavior: smooth; 
+}
+
+hr{
+    border: solid;
+    border-radius: 10px;
+    width: 30%;
+    margin-top: 20px;
+}
+
+.big-header {
+    font-size: 3.5em !important;
+}
+
+/* Menu */
+#navbar {
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-left: -8px;
+    
+
+    display: flex;
+    justify-content: center; 
+}
+
+.element_menu {
+    float: left;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+    transition: all 250ms;
+    border-radius: 5px;
+}
+
+.element_menu:hover {
+    cursor: pointer;
+    background-color: goldenrod;
+    transition: all 250ms;
+}
+
+/* Secciones */
+.section-flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.section-header{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+/* Galeria */
+.gallery{
+    width: 80%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gallery a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.gallery img {
+    height: 400px;
+    width: auto;
+    border-radius: 10px;
+    border: solid 1px;
+    margin: 10px;
+    transition: all 250ms;
+}
+
+.gallery img:hover{
+    transition: all 250ms;
+    box-shadow: 10px 10px 5px;
+}
+
+/* Todos los ejercicios javascript. */
+#arrow{
+    height: 20px;
+    transition: all 250ms;
+}
+
+#arrow:hover{
+    cursor: pointer;
+}
+
+#all_javascript_buttons {
+    margin-top: 20px;
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#all_javascript_buttons *{
+    margin: 5px;
+    opacity: 0;
+}
+
+@media (max-width: 800px) {
+    .gallery img{
+      height: 200px;
+    }
+  }
+
+/* CSS Boton */
+button {
+    padding: 15px 20px;
+    border-radius: 15px;
+    color: #212121;
+    background: #e8e8e8;
+    font-weight: bold;
+    font-size: 1em;
+    transition: all 250ms;
+}
+
+button:hover {
+    color: #e8e8e8;
+    background-color: #212121;
+    cursor: pointer;
+}
